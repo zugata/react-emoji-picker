@@ -103,7 +103,8 @@ module.exports = React.createClass({
 
   footer: function() {
     return React.createElement("span", null,
-             React.createElement("br", null), this.state.hovered
+             React.createElement("br", null),
+             this.state.hovered || " "
            )
   },
 
