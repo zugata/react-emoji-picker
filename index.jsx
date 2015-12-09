@@ -164,7 +164,7 @@ module.exports = React.createClass({
 =======
     return React.createElement("span", null,
              React.createElement("br", null),
-             this.state.hovered || " "
+             this.state.hovered || '\u0020'
            )
 >>>>>>> keep footer fix
   },
