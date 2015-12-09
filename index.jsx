@@ -155,11 +155,18 @@ module.exports = React.createClass({
   },
 
   footer: function() {
+<<<<<<< 5e1a946ef15c4bbf3e97a6bd729d81353615d32b
     if(this.state.hovered) {
       return React.createElement("span", null,
              React.createElement("br", null), this.state.hovered
            );
     }
+=======
+    return React.createElement("span", null,
+             React.createElement("br", null),
+             this.state.hovered || " "
+           )
+>>>>>>> keep footer fix
   },
 
   hovered: function(emoji) {
