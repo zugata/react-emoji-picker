@@ -8,7 +8,7 @@ var tabStyle = {
   marginRight: '0.4rem',
   display: 'inline-block',
   padding: '0.2rem 0.3rem',
-  border: '1px solid silver',
+  border: '1px solid #E8E8E8',
   borderBottom: 'none',
   borderRadius: '0.3rem 0.3rem 0 0',
   cursor: 'pointer',
