@@ -164,7 +164,7 @@ module.exports = React.createClass({
 =======
     return React.createElement("span", null,
              React.createElement("br", null),
-             this.state.hovered || '\u0020'
+             this.state.hovered || "Choose an emoji above"
            )
 >>>>>>> keep footer fix
   },
