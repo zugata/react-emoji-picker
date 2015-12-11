@@ -28,6 +28,10 @@ module.exports = React.createClass({
   mixins: [ReactEmoji],
   propTypes: {
     query: React.PropTypes.string,
+    promptText: React.PropTypes.string,
+  },
+  defaultProps: {
+    promptText: "Choose an emoji above"
   },
   getInitialState: function() {
     return {
@@ -104,7 +108,7 @@ module.exports = React.createClass({
   footer: function() {
     return React.createElement("span", null,
              React.createElement("br", null),
-             this.state.hovered || "Choose an emoji above"
+             this.state.hovered || this.props.promptText
            )
   },
 
