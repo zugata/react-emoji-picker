@@ -23,6 +23,8 @@ function filterByCategory(opts) {
   return opts.emoji.category === opts.category
 }
 
+var DEFAULT_PROMPT = "Choose an emoji above";
+
 module.exports = React.createClass({
   displayName: 'EmojiPicker',
   mixins: [ReactEmoji],
@@ -31,7 +33,7 @@ module.exports = React.createClass({
     promptText: React.PropTypes.string,
   },
   defaultProps: {
-    promptText: "Choose an emoji above"
+    promptText: DEFAULT_PROMPT
   },
   getInitialState: function() {
     return {
@@ -106,9 +108,11 @@ module.exports = React.createClass({
   },
 
   footer: function() {
+    var prompt = this.props.query ? DEFAULT_PROMPT : this.props.promptText;
+    
     return React.createElement("span", null,
              React.createElement("br", null),
-             this.state.hovered || this.props.promptText
+             this.state.hovered || prompt
            )
   },
 
