@@ -66,20 +66,20 @@ module.exports = React.createClass({
     }
   },
 
-  componentDidMount: function() {
-    document.addEventListener('keydown', this.grabKeyPress, false)
-  },
-  componentWillUnmount: function() {
-    document.removeEventListener('keydown', this.grabKeyPress, false)
-  },
+  // componentDidMount: function() {
+  //   document.addEventListener('keydown', this.grabKeyPress, false)
+  // },
+  // componentWillUnmount: function() {
+  //   document.removeEventListener('keydown', this.grabKeyPress, false)
+  // },
 
-  // if user presses Enter or Tab while EmojiPicker showing
-  grabKeyPress: function(e) {
-    if(e.keyCode === 13 || e.keyCode === 9) {
-      e.preventDefault()
-      this.selectFirst()
-    }
-  },
+  // // if user presses Enter or Tab while EmojiPicker showing
+  // grabKeyPress: function(e) {
+  //   if(e.keyCode === 13 || e.keyCode === 9) {
+  //     e.preventDefault()
+  //     this.selectFirst()
+  //   }
+  // },
 
   selectFirst: function() {
     if(this.emojis()[0]) {
