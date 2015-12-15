@@ -190,7 +190,7 @@ module.exports = React.createClass({
 
   render: function() {
     return (
-      React.createElement("span", {style: this.props.style},
+      React.createElement("div", this.props,
         this.header(),
         this.body(),
         this.footer()
