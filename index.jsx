@@ -141,7 +141,7 @@ module.exports = React.createClass({
     if(emojiLinks.length === 0) emojiLinks = "No emojis found";
 
     return (
-      React.createElement("span", {style: this.props.style},
+      React.createElement("div", this.props,
         this.header(),
         emojiLinks,
         this.footer()
