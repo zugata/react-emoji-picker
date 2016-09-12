@@ -19,7 +19,7 @@
   "author": "Chad Ostrowski <hi+npm@chadoh.com> (chadoh.com)",
   "license": "ISC",
   "dependencies": {
-    "react": "^0.13.3",
+    "react": "^0.14.0",
     "react-emoji": "^0.4.1"
   }
 }
