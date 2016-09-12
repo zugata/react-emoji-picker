@@ -33,9 +33,7 @@ activeTabStyle.borderBottom = '3px solid white';
 
 var bodyStyle = {
   display: 'block',
-  margin: '0.3em 0 0',
-  maxHeight: '12.5em',
-  overflowY: 'scroll',
+  margin: '0.5em 0',
 }
 
 function filterByName(opts) {
@@ -163,10 +161,7 @@ module.exports = React.createClass({
   footer: function() {
     var prompt = this.props.query ? DEFAULT_PROMPT : this.props.promptText;
     
-    return React.createElement("span", null,
-             React.createElement("br", null),
-             this.state.hovered || prompt
-           )
+    return React.createElement("span", null, this.state.hovered || prompt);
   },
 
   hovered: function(emoji) {
