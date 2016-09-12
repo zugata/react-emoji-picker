@@ -33,7 +33,7 @@ activeTabStyle.borderBottom = '3px solid white';
 
 var bodyStyle = {
   display: 'block',
-  margin: '0.5em 0',
+  margin: '0.5em',
 }
 
 function filterByName(opts) {
